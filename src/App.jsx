@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import './App.css'
 
 const EXTERNAL = 'noopener noreferrer'
@@ -125,7 +125,6 @@ function DetectivesActivity() {
             </button>
             {mostrar[i] && (
               <p className={`hint hint--${it.tipo}`}>
-                Orientación para este caso (no es única lectura legal):{' '}
                 <strong>{etiqueta[it.tipo]}</strong>
               </p>
             )}
@@ -360,7 +359,7 @@ function ReflexionVivirBien() {
         )}
       </ul>
       <label className="areaLabel">
-        Tu reflexión privada (no se guarda en el servidor)
+        Tu reflexión privada
         <textarea
           className="area"
           rows={5}
@@ -442,25 +441,47 @@ const SUBTEMAS = [
     id: 'dh',
     num: '01',
     title: 'Derechos humanos en la vida real',
-    idea: 'Los derechos humanos solo tienen sentido cuando se viven y se respetan en la vida cotidiana.',
+    idea:
+      'Los derechos humanos adquieren peso ético cuando dejan de ser eslogan y se traducen en atención cotidiana a la dignidad ajena.',
     body: (
       <>
-        Los derechos humanos protegen la dignidad de las personas, pero muchas veces solo existen en documentos y
-        no en la práctica. Este subtema invita a reflexionar sobre las desigualdades reales y la importancia de
-        reconocer cuándo se vulneran los derechos.
+        <p>
+          Los instrumentos internacionales dan marco y vocabulario común, pero el contraste entre el discurso normativo y las
+          experiencias vividas suele ser revelador: no todas las personas reciben el mismo trato, ni acceden en igualdad de
+          condiciones a servicios o espacios decisivos para su desarrollo. Formarse en derechos implica, por tanto, ejercitar la
+          capacidad de observar contextos concretos y preguntarse si lo que ocurre respeta o erosiona la persona como fin, no solo
+          como administrado o usuario de un trámite.
+        </p>
+        <p>
+          Desde una perspectiva aplicada, el valor práctico del tema aparece cuando cultivamos sensibilidad ante situaciones que
+          antes pasaban inadvertidas: exclusiones sutiles, tratamientos degradantes o omisiones institucionales que reproducen
+          desigualdad. La responsabilidad ética no se agota en conocer listados; se fortalece al elegir no mirar hacia otro lado:
+          intervenir con medidas proporcionadas, acompañar, documentar con rigor o apoyar canales formales cuando correspondan.
+          Muchas veces el punto de partida es modesto —un trato respetuoso, una mediación informada— pero es precisamente en lo
+          cotidiano donde se consolidan culturas de respeto o, por el contrario, su normalización silenciosa.
+        </p>
       </>
     ),
     ejemplo: (
       <>
-        Ejemplo práctico: <strong>discriminación en la escuela</strong> o falta sistemática de acceso a{' '}
-        <strong>educación de calidad</strong> para algunos grupos.
+        Ejemplo práctico: en el entorno educativo, situaciones como la{' '}
+        <strong>exclusión recurrente de un estudiante por rasgos lingüísticos o de origen</strong>, o la{' '}
+        <strong>asimetría sistemática en el acceso a orientación, tecnología o materiales de calidad</strong>, pueden leerse como
+        tensiones entre el principio de igualdad y la práctica institucional —un campo donde conviene combinar empatía,
+        protocolos y seguimiento.
       </>
     ),
     links: [
-      ['Declaración Universal de los Derechos Humanos', 'https://www.ohchr.org/es/human-rights/universal-declaration/translations/spanish'],
-      ['Educación como derecho (Humanium)', 'https://www.humanium.org/es/derecho-educacion/'],
+      [
+        'Pedagogía de la Declaración Universal (Naciones Unidas)',
+        'https://www.un.org/es/documents/udhr/pedagogy.shtml',
+      ],
+      [
+        'Instrumentos internacionales en derechos humanos (UNESCO)',
+        'https://www.unesco.org/es/node/66640',
+      ],
     ],
-    videos: [['Video complementario DD.HH.', 'cQyEZ5erG6k']],
+    videos: [['¿Qué son los derechos humanos y por qué importan en la vida diaria?', 'NLAfV4HLYJk']],
     Activity: DetectivesActivity,
     cardClass: 'topicCard topicCard--mint',
   },
@@ -469,25 +490,45 @@ const SUBTEMAS = [
     num: '02',
     title: 'Ciudadanía activa',
     idea:
-      'Un ciudadano activo no solo critica lo que está mal, también participa para transformarlo.',
+      'La ciudadanía madura distingue entre el diagnóstico verbal permanente y la asunción gradual de responsabilidades compartidas.',
     body: (
       <>
-        La ciudadanía implica participación, organización y responsabilidad social. No basta con observar los
-        problemas, es necesario actuar dentro de redes confiables, con información verificada y respetando la
-        diversidad de opiniones legítimas.
+        <p>
+          Las democracias contemporáneas conviven con hábitos de crítica rápida —en redes, en la mesa familiar o en la escuela— que
+          pocas veces se traducen en propuestas verificables o en vínculos duraderos con instancias de decisión. La ciudadanía
+          activa no niega el reclamo legítimo; lo articula con rutas de participación: información contrastada, diálogo con actores
+          diversos y acciones escalables que puedan sostenerse en el tiempo sin depender exclusivamente de figuras heroicas.
+        </p>
+        <p>
+          Un aprendizaje central es que el impacto público no está reservado a quienes ostentan cargos formales. Decisiones locales
+          sobre espacios comunes, escolarización, seguridad percibida o calidad ambiental se nutren de aportes ordinarios cuando se
+          canalizan con método: evidencias, calendarios realistas y acuerdos que distribuyan tareas. Salir de la posición de mero
+          espectador —aun con compromisos acotados— altera la dinámica colectiva y reduce la fragmentación entre “los que se quejan”
+          y “los que supuestamente arreglan todo”.
+        </p>
       </>
     ),
     ejemplo: (
       <>
-        Ejemplo en contexto cercano: <strong>organizar una jornada de limpieza de un parque comunitario</strong>, con
-        permisos, materiales segregados y registro ante la instancia municipal correspondiente.
+        Ejemplo en contexto cercano: impulsar una{' '}
+        <strong>jornada comunitaria de mantenimiento en un parque o espacio público</strong>, articulando convocatoria abierta,
+        gestión de residuos conforme a normativa, permisos cuando aplique y una minuta breve para la autoridad municipal que
+        documente necesidades recurrentes —un ciclo que une convivencia, datos y seguimiento institucional.
       </>
     ),
     links: [
-      ['Ciudadanía activa (INE)', 'https://portalanterior.ine.mx/archivos2/s/DECEYEC/EducacionCivica/Ciudadania-Activa.pdf'],
-      ['Participación social (gob.mx/SEP)', 'https://www.gob.mx/sep/acciones-y-programas/que-es-la-participacion-social'],
+      ['Cultura cívica y educación democrática (INE México)', 'https://ine.mx/cultura-civica'],
+      [
+        '¿Qué es la participación social? (Secretaría de Educación Pública)',
+        'https://www.gob.mx/sep/acciones-y-programas/que-es-la-participacion-social',
+      ],
+      [
+        '¿Qué es la participación ciudadana? (ISAF, México)',
+        'https://isaf.gob.mx/transparencia/participacion-ciudadana/que-es',
+      ],
+      ['Participación ciudadana (contexto y modalidades)', 'https://es.wikipedia.org/wiki/Participaci%C3%B3n_ciudadana'],
     ],
-    videos: [['Participación ciudadana', 'aeOvpnszDNA']],
+    videos: [['Participación ciudadana y espacios democráticos', 'aeOvpnszDNA']],
     Activity: EspectadorCiudadanoActivity,
     cardClass: 'topicCard topicCard--clay',
   },
@@ -495,28 +536,41 @@ const SUBTEMAS = [
     id: 'tipos',
     num: '03',
     title: 'Tipos de ciudadanos',
-    idea: 'No todos participan igual, pero todos pueden evolucionar.',
+    idea:
+      'Tipologías sirven menos para etiquetar personas que para orientar una autocrítica honesta sobre qué aportes buscamos dar.',
     body: (
       <>
-        Reconocer perfiles permite diseñar mejores alianzas: el <strong>ciudadano responsable</strong>, el{' '}
-        <strong>participativo</strong> y el orientado <strong>hacia la justicia</strong> responden a distintos
-        estilos de compromiso cuando conviven valores democráticos.
+        <p>
+          En la literatura y en los materiales curriculares suele distinguirse entre quienes cumplen obligaciones formales, quienes
+          amplían la participación en redes y proyectos, y quienes inclinan su mirada hacia causas estructurales o marcos normativos
+          más amplios. Ningún perfil agota la complejidad humana; todos pueden coexistir tensionados en una misma biografía. Lo
+          útil del ejercicio es identificar tendencias dominantes y preguntarse si fortalecen el bien común o si operan como zona
+          de confort disfrazada de compromiso.
+        </p>
+        <p>
+          La reflexión incómoda —pero formativa— consiste en contrastar la autoimagen (“soy buen ciudadano”) con evidencias
+          conductuales: frecuencia de participación, disposición al diálogo con diferencias legítimas y disposición a asumir costos
+          cuando las reglas del juego parecen sesgadas. Reconocer matices permite armar equipos complementarios y evitar tanto el
+          maximalismo improductivo como la resignación silenciosa ante lo mejorable.
+        </p>
       </>
     ),
     ejemplo: (
       <>
-        Contraste rápido: <strong>donar</strong> recursos puntualmente, <strong>organizar</strong> colectividades
-        para ampliar el impacto o <strong>transformar reglas institucionales</strong> cuando se detectan desigualdades
-        estructurales.
+        Contraste orientador: <strong>contribuir recursos de manera puntual</strong> frente a{' '}
+        <strong>organizar esfuerzos colectivos que escalen alcance</strong> frente a{' '}
+        <strong>incidir en políticas o normas cuando los síntomas locales revelan patrones sistémicos</strong>. La pregunta práctica
+        no es cuál rol es “mejor”, sino cuál combinación responde al problema y qué habilidades conviene desarrollar.
       </>
     ),
     links: [
-      ['Articulación académica Dialnet', 'https://dialnet.unirioja.es/servlet/articulo?codigo=4683210'],
+      [
+        'La participación de la ciudadanía en la vida pública (SEP · Aprende en Casa)',
+        'https://aprendeencasa.sep.gob.mx/secundaria/la-participacion-de-la-ciudadania-en-la-vida-publica/',
+      ],
+      ['¿Cuáles son los tipos de ciudadanía?', 'https://todosloshechos.es/cuales-son-los-tipos-de-ciudadania'],
     ],
-    videos: [
-      ['Enfoque 1', 'jCaqbo0B8-A'],
-      ['Enfoque 2', 'TZIXQYc-524'],
-    ],
+    videos: [['Ciudadanía, derechos y vida en comunidad', 'jCaqbo0B8-A']],
     Activity: TipoCiudadanoActivity,
     cardClass: 'topicCard topicCard--indigo',
   },
@@ -524,26 +578,49 @@ const SUBTEMAS = [
     id: 'vivir',
     num: '04',
     title: '¿Qué significa vivir bien?',
-    idea: 'Vivir bien no es tener más, es vivir con sentido.',
+    idea:
+      'Florecer humanamente exige revisar los indicadores con los que medimos “éxito”: no siempre coinciden con calidad de vida vivida.',
     body: (
       <>
-        La felicidad no es solo material, sino un entramado de equilibrios emocionales, relaciones significativas y
-        sentido práctico. Pensar así evita que el éxito aparente encubra ausencias profundas de bienestar.
+        <p>
+          Las sociedades de consumo y meritocracia tienden a equiparar vivir bien con acumular bienes, visibilidad o logros
+          comparables. Desde la ética reflexiva —y en diálogo con tradiciones como la virtud aristotélica— conviene ampliar el foco:
+          estabilidad emocional relativa, vínculos confiables, autonomía razonable y coherencia entre valores declarados y prácticas.
+          Sin ese contrapeso, es posible mantener una trayectoria sociológicamente exitosa al tiempo que se experimenta vacío,
+          agotamiento crónico o desajuste entre prioridades y tiempo disponible.
+        </p>
+        <p>
+          Interrogar el propio proyecto de vida resulta incómodo porque puede revelar metas heredadas más que elegidas, o sacrificios
+          que ya no se justifican. No obstante, esa tensión es fecunda: permite distinguir entre satisfacciones fugaces y fines que
+          organizan la existencia en torno al cuidado, el aprendizaje y la contribución socialmente inteligible. Vivir bien, en este
+          sentido maduro, integra propósito personal con responsabilidad hacia quienes rodean nuestras decisiones.
+        </p>
       </>
     ),
     ejemplo: (
       <>
-        Un caso habitual: obtener <strong>reconocimientos públicos continuos sin espacio genuino para el descanso o el
-        duelo.</strong>
+        Caso frecuente en entornos competitivos: mantener <strong>reconocimientos externos o cargas de trabajo intensas</strong>{' '}
+        sin espacios verificables para <strong>descanso restaurador, duelo legítimo o intimidad relacional</strong> —un patrón donde
+        el costo psicosocial puede permanecer invisible hasta agotar capacidades.
       </>
     ),
     links: [
-      ['Felicidad según Aristóteles (National Geographic)', 'https://www.nationalgeographicla.com/cultura/2022/10/que-es-la-felicidad-segun-aristoteles'],
-      ['Artículo SciELO', 'https://ve.scielo.org/scielo.php?pid=S1010-29142015000200002&script=sci_arttext'],
+      [
+        '¿Qué es la felicidad según Aristóteles? (National Geographic en español)',
+        'https://www.nationalgeographicla.com/cultura/2022/10/que-es-la-felicidad-segun-aristoteles',
+      ],
+      [
+        'Eudaimonía en Aristóteles: método para pensar la felicidad (El Debate)',
+        'https://www.eldebate.com/cultura/20240804/eudaimonia-aristoteles-metodo-encontrar-felicidad_217551.html',
+      ],
+      [
+        'Aristóteles: ética de la virtud y eudaimonía (La casa de la ética)',
+        'https://lacasadelaetica.com/aristoteles-etica-de-la-virtud/',
+      ],
     ],
     videos: [
-      ['Reflexiones sobre vida plena', 'Xv0qAQV6ZUk'],
-      ['Bienestar desde distintos ángulos', '8bgCp4dbh7o'],
+      ['La ética de Aristóteles: felicidad y virtud (Programa Eidos)', 'lsBlk6hKoSE'],
+      ['La felicidad en Aristóteles (filosofía antigua)', '4tITFBAKRBE'],
     ],
     Activity: ReflexionVivirBien,
     cardClass: 'topicCard topicCard--sand',
@@ -552,23 +629,43 @@ const SUBTEMAS = [
     id: 'equilibrio',
     num: '05',
     title: 'El equilibrio (justo medio)',
-    idea: 'El equilibrio no es evitar todo, es saber regularlo.',
+    idea:
+      'El justo medio es una práctica revisable: regular intensidades, no aspirar a una perfección estática ni caer en la indulgencia sistemática.',
     body: (
       <>
-        Aristóteles enseña la virtud como el punto medio razonable entre extremos nocivos de exceso y defecto,
-        aplicable hoy mismo al autocuidado, al consumo informativo y a la vida cotidiana digital.
+        <p>
+          La tradición virtuosa asociada a Aristóteles describe la excelencia moral como un hábito estable orientado a un punto
+          intermedio entre defecto y exceso —por ejemplo, entre cobardía y temeridad en el caso del valor. Traducido a dilemmas
+          contemporáneos, el esquema ayuda a diagnosticar oscilaciones típicas: hiperexigencia laboral frente al abandono de
+          obligaciones; hiperconectividad frente al aislamiento digital paralizante; control rígido frente a impulsividad
+          desorganizada.
+        </p>
+        <p>
+          Lo relevante es que el equilibrio no se “obtiene” una sola vez: cambian contextos, cargas emocionales y roles vitales, de
+          modo que la regulación ética demanda revisiones periódicas. Aprender a pausar, a delegar, a fijar límites informados o a
+          retomar compromisos tras un desvío no es debilidad, sino madurez práctica. La virtud, así entendida, reconoce la finitud
+          humana sin renunciar a la mejora continua.
+        </p>
       </>
     ),
     ejemplo: (
       <>
-        Caso habitual: usar <strong>redes sociales con propósitos formativos definidos</strong> y tiempos límite, en
-        lugar de navegación reactiva interminable.
+        Caso habitual: sustituir la navegación reactiva en <strong>redes sociales</strong> por sesiones delimitadas con{' '}
+        <strong>objetivos formativos o comunitarios explícitos</strong>, combinadas con acuerdos personales de hiato —un ejemplo
+        modesto de cómo el medio virtuoso se opera mediante reglas claras y autocontrol situacional.
       </>
     ),
     links: [
-      ['Concepto Herder Editorial', 'https://encyclopaedia.herdereditorial.com/wiki/Justo_medio'],
+      [
+        'La virtud está en el medio, ¿y qué más? (blog de Abel Marín)',
+        'https://www.abelmarin.com/la-virtud-esta-en-el-medio-y-que-mas/',
+      ],
+      ['Justo medio (enciclopedia en español · Herder)', 'https://encyclopaedia.herdereditorial.com/wiki/Justo_medio'],
     ],
-    videos: [['Ética y virtud mediada', 'bFQu6dD5lSc']],
+    videos: [
+      ['Aristóteles y la ética: eudemonismo y término medio', 'Q1-8JUkE1yM'],
+      ['Ética y virtud en el justo medio', 'bFQu6dD5lSc'],
+    ],
     Activity: BalanzaActivity,
     cardClass: 'topicCard topicCard--sage',
   },
@@ -576,18 +673,6 @@ const SUBTEMAS = [
 
 export default function App() {
   useReveal()
-
-  const [open, setOpen] = useState(() => ({
-    dh: false,
-    ciudadania: false,
-    tipos: false,
-    vivir: false,
-    equilibrio: false,
-  }))
-
-  const toggle = useCallback((id) => {
-    setOpen((o) => ({ ...o, [id]: !o[id] }))
-  }, [])
 
   const navLinks = [
     ['Portada', 'hero'],
@@ -597,14 +682,14 @@ export default function App() {
     ['Recursos', 'recursos'],
   ]
 
-  const yearRef = useRef(new Date().getFullYear())
+  const footerYear = useMemo(() => new Date().getFullYear(), [])
 
   return (
     <div className="shell">
       <header className="topNav">
         <div className="topNav_inner">
           <a className="brand" href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>
-            Módulo 3 <span aria-hidden>|</span> Ética &amp; ciudadanía
+            Ética profesional y ciudadanía <span aria-hidden>|</span> Evidencia Final
           </a>
           <nav className="navLinks" aria-label="Secciones del blog">
             {navLinks.map(([label, id]) => (
@@ -627,18 +712,16 @@ export default function App() {
         <section id="hero" className="hero js-reveal">
           <div className="hero_grid">
             <div className="hero_copy">
-              <p className="eyebrow">Blog reflexivo • Español</p>
+              <p className="eyebrow">Blog reflexivo • Esteban Rojas</p>
               <h1 className="hero_title">
-                Ética, ciudadanía y vida en comunidad: aprendizajes esenciales del Módulo&nbsp;3
+                Ética profesional y ciudadanía: aprendizajes del Módulo&nbsp;3
               </h1>
               <p className="hero_sub">
-                Una mirada reflexiva sobre los derechos humanos, la participación ciudadana, la felicidad y el equilibrio
-                personal.
+                
               </p>
               <p className="hero_intro">
-                Este blog integra cinco subtemas esenciales del Módulo 3 que permiten comprender cómo la ética y la ciudadanía
-                impactan en nuestra vida diaria. No se trata solo de aprender conceptos, sino de reflexionar sobre nuestra forma
-                de vivir, convivir y tomar decisiones.
+                Una mirada que parte del contraste entre lo que decimos creer y lo que efectivamente ocurre en escuelas,
+                espacios públicos y relaciones cotidianas: derechos, participación, propósito personal y regulación ética del día a día.
               </p>
               <button type="button" className="primary" onClick={() => scrollToSection('subtemas')}>
                 Explorar contenidos
@@ -659,48 +742,32 @@ export default function App() {
         </section>
 
         <section id="subtemas" className="topicsSection js-reveal">
-          <div className="sectionHead">
-            <h2>Ejes del módulo</h2>
-            <p>
-              Cada bloque puede expandirse. Incluye recursos externos (se abren en pestaña nueva) y una actividad para detener el
-              ritmo lectura–reflexión.
-            </p>
-          </div>
 
           <div className="topicStack">
             {SUBTEMAS.map((topic) => {
               const Activity = topic.Activity
-              const isOpen = open[topic.id]
               const panelId = `panel-${topic.id}`
               const hdrId = `hdr-${topic.id}`
 
               return (
-                <article key={topic.id} className={topic.cardClass}>
-                  <button
-                    type="button"
-                    id={hdrId}
-                    aria-controls={panelId}
-                    aria-expanded={isOpen}
-                    className="topicHdr"
-                    onClick={() => toggle(topic.id)}
-                  >
+                <details key={topic.id} id={topic.id} className={`${topic.cardClass} topicDisclosure`}>
+                  <summary className="topicHdr" id={hdrId}>
                     <span className="topicNum">{topic.num}</span>
                     <span className="topicTitleWrap">
                       <span className="topic_title">{topic.title}</span>
                       <span className="topic_pull">{ideaShort(topic.idea)}…</span>
                     </span>
-                    <span className={`topicChevron ${isOpen ? 'topicChevron--open' : ''}`} aria-hidden>
+                    <span className="topicChevron" aria-hidden>
                       ›
                     </span>
-                  </button>
+                  </summary>
 
                   <div
                     id={panelId}
+                    className="topicBodyInner"
                     role="region"
                     aria-labelledby={hdrId}
-                    className={`topicBodyWrap ${isOpen ? 'topicBodyWrap--open' : ''}`}
                   >
-                    <div className="topicBodyInner">
                       <blockquote className="pullQuote">{topic.idea}</blockquote>
 
                       <div className="prose">{topic.body}</div>
@@ -734,9 +801,8 @@ export default function App() {
                         <summary>Abrir actividad interactiva</summary>
                         <Activity />
                       </details>
-                    </div>
                   </div>
-                </article>
+                </details>
               )
             })}
           </div>
@@ -748,49 +814,85 @@ export default function App() {
           </div>
           <div className="cardSoft">
             <p>
-              Los temas abordados permiten comprender que la ética no es algo teórico, sino una guía para la vida diaria.
-              Los derechos humanos, la ciudadanía activa, la reflexión sobre la felicidad y el equilibrio personal forman una
-              base para tomar mejores decisiones y convivir de manera más justa. Este aprendizaje ayuda a desarrollar pensamiento
-              crítico, empatía y responsabilidad social.
+              En conjunto, estos ejes sugieren que la ética aplicada combina tres movimientos: prestar atención fina a cómo se trata
+              a las personas en contextos reales; traducir juicios en compromisos públicos o comunitarios que no dependan solo de la
+              queja; y volver la mirada hacia uno mismo para evaluar si las prácticas cotidianas —incluidas las laborales y las
+              digitales— sostienen o erosionan dignidad propia y ajena.
+            </p>
+            <p>
+              La reflexión sobre vivir bien y el justo medio cierra el circuito: remindernos que fines materiales o reputacionales,
+              si no se ordenan dentro de un proyecto equilibrado, pueden desplazar relaciones, salud y sentido. Integrar derechos,
+              ciudadanía y virtudes personales fortalece pensamiento crítico y empatía, pero sobre todo habitúa decisiones más
+              coherentes con valores declarados en democracia.
             </p>
           </div>
         </section>
 
         <section id="reflexion" className="narrow js-reveal">
           <div className="sectionHead">
-            <h2>Reflexión personal del autor/a</h2>
+            <h2>Reflexión personal — Esteban Rojas</h2>
           </div>
           <div className="cardAccent">
             <p>
-              El estudio de estos temas impacta directamente en mi forma de ver el mundo. Me hace más consciente de mis
-              decisiones, de mi papel como ciudadano y de la importancia de actuar con responsabilidad tanto en mi vida
-              personal como profesional. En el ámbito laboral, me permitirá actuar con ética, respetar a los demás y tomar
-              decisiones más justas. En lo personal, me ayuda a buscar equilibrio, propósito y una vida más consciente.
-              Comprendo que no solo se trata de crecer individualmente, sino de contribuir al bienestar de los demás.
+              Lo que más me llevo del módulo es la insistencia en cerrar la brecha entre principios admirables y prácticas
+              observables. Los derechos humanos dejan de sonar abstractos cuando uno empieza a notar exclusiones cotidianas y se
+              pregunta qué puede hacer, incluso de forma modesta, sin convertir la indignación en espectáculo ni la pasividad en
+              cinismo.
+            </p>
+            <p>
+              La ciudadanía activa me interpela a sustituir lamentos prolongados por pasos concretos —información verificada,
+              diálogo con otros actores, propuestas escalables— porque el cambio suele anidar en gestiones pequeñas pero sostenidas.
+              El apartado sobre tipos de ciudadanos me recuerda revisar con honestidad si mi compromiso aporta o solo cumple una
+              imagen cómoda de “buen ciudadano”.
+            </p>
+            <p>
+              Por último, reflexionar sobre vivir bien y sobre el justo medio me obliga a confrontar narrativas de éxito que casi
+              nunca miden descanso, vínculos ni propósito. Aspiro a que mi trayectoria combine rigor profesional con límites sanos y
+              contribución real al entorno, entendiendo que el equilibrio se negocia día a día y que la ética personal alimenta —o
+              debilita— la vida en comunidad.
             </p>
           </div>
         </section>
 
-        <section id="recursos" className="wide js-reveal">
+        <section id="recursos" className="narrow js-reveal">
           <div className="sectionHead">
             <h2>Fuentes y recursos citados</h2>
-            <p>Lista compilada desde los bloques previos para una revisión rápida.</p>
+            <p className="sourcesLead">
+              Enlaces externos agrupados por subtema; lecturas y videos en un solo bloque.
+            </p>
           </div>
-          <div className="sourcesGrid">
-            {SUBTEMAS.map((topic) => (
-              <article key={`src-${topic.id}`} className="sourceMini">
-                <h3>{topic.title}</h3>
-                <ul>
-                  {[...topic.links, ...topic.videos.map(([l, vid]) => [`Video: ${l}`, `https://www.youtube.com/watch?v=${vid}`])].map(
-                    ([label, url]) => (
-                      <li key={`${topic.id}-${url}`}>
-                        <ResourceLink href={url}>{label}</ResourceLink>
-                      </li>
-                    )
-                  )}
-                </ul>
-              </article>
-            ))}
+          <div className="sourcesCompact cardSoft">
+            <dl className="sourcesDl">
+              {SUBTEMAS.map((topic) => {
+                const entries = [
+                  ...topic.links.map(([label, url]) => ({ label, url, kind: 'read' })),
+                  ...topic.videos.map(([label, vid]) => ({
+                    label,
+                    url: `https://www.youtube.com/watch?v=${vid}`,
+                    kind: 'video',
+                  })),
+                ]
+                return (
+                  <div key={topic.id} className="sourcesDl_group">
+                    <dt className="sourcesDt">{topic.title}</dt>
+                    <dd className="sourcesDd">
+                      <ul className="sourcesUl">
+                        {entries.map((item) => (
+                          <li key={`${topic.id}-${item.url}`}>
+                            {item.kind === 'video' && (
+                              <span className="sourcesKind" aria-hidden>
+                                ▶
+                              </span>
+                            )}
+                            <ResourceLink href={item.url}>{item.label}</ResourceLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </dd>
+                  </div>
+                )
+              })}
+            </dl>
           </div>
         </section>
       </main>
@@ -798,11 +900,10 @@ export default function App() {
       <footer className="siteFooter js-reveal">
         <div className="footerInner">
           <p>
-            <strong>Blog académico Ética y Ciudadanía</strong>. Contenidos educativos y enlaces externos de referencia. El material
-            embebido proviene de terceros; respeta cada licencia cuando reutilices material.
+            <strong>Blog académico Ética y Ciudadanía</strong>. Contenidos educativos y enlaces externos de referencia.
           </p>
           <p className="footerMeta">
-            Módulo 3 • Proyecto académico • {yearRef.current}
+            By: Esteban Rojas • Módulo 3 • Evidencia Final • {footerYear}
           </p>
         </div>
       </footer>
