@@ -217,7 +217,7 @@ function TipoCiudadanoActivity() {
       ],
     },
     {
-      q: 'Si una norma parece sesgada, tiendes a…',
+      q: 'Si una norma parece sesgada, tiendes a...',
       a: [
         { t: 'Ajustarme porque “así están las cosas”.', p: [0.8, 0, 0] },
         { t: 'Movilizarme con vecinas y vecinos.', p: [0.2, 1, 0.3] },
@@ -286,7 +286,7 @@ function TipoCiudadanoActivity() {
 
       {step >= preguntas.length && (
         <div className="resultCard">
-          <p className="quizCount">Tu tendencia destacada es…</p>
+          <p className="quizCount">Tu tendencia destacada es...</p>
           <p className="quizResult">{perfil}</p>
           <p className="smallPrint">
             Actividad formativa sin validez científica. Sirve solo para ordenar tus intuiciones sobre roles
@@ -364,7 +364,7 @@ function ReflexionVivirBien() {
           className="area"
           rows={5}
           value={texto}
-          placeholder="Aquí puede ir una lista de frases cortas con lo que necesitas reconsiderar durante la siguiente semana…"
+          placeholder="Aquí puede ir una lista de frases cortas con lo que necesitas reconsiderar durante la siguiente semana..."
           onChange={(e) => setTexto(e.target.value)}
         />
       </label>
@@ -457,7 +457,7 @@ const SUBTEMAS = [
           antes pasaban inadvertidas: exclusiones sutiles, tratamientos degradantes o omisiones institucionales que reproducen
           desigualdad. La responsabilidad ética no se agota en conocer listados; se fortalece al elegir no mirar hacia otro lado:
           intervenir con medidas proporcionadas, acompañar, documentar con rigor o apoyar canales formales cuando correspondan.
-          Muchas veces el punto de partida es modesto —un trato respetuoso, una mediación informada— pero es precisamente en lo
+          Muchas veces el punto de partida es modesto, un trato respetuoso, una mediación informada, pero es precisamente en lo
           cotidiano donde se consolidan culturas de respeto o, por el contrario, su normalización silenciosa.
         </p>
       </>
@@ -467,7 +467,7 @@ const SUBTEMAS = [
         Ejemplo práctico: en el entorno educativo, situaciones como la{' '}
         <strong>exclusión recurrente de un estudiante por rasgos lingüísticos o de origen</strong>, o la{' '}
         <strong>asimetría sistemática en el acceso a orientación, tecnología o materiales de calidad</strong>, pueden leerse como
-        tensiones entre el principio de igualdad y la práctica institucional —un campo donde conviene combinar empatía,
+        tensiones entre el principio de igualdad y la práctica institucional, un campo donde conviene combinar empatía,
         protocolos y seguimiento.
       </>
     ),
@@ -494,7 +494,7 @@ const SUBTEMAS = [
     body: (
       <>
         <p>
-          Las democracias contemporáneas conviven con hábitos de crítica rápida —en redes, en la mesa familiar o en la escuela— que
+          Las democracias contemporáneas conviven con hábitos de crítica rápida, en redes, en la mesa familiar o en la escuela, que
           pocas veces se traducen en propuestas verificables o en vínculos duraderos con instancias de decisión. La ciudadanía
           activa no niega el reclamo legítimo; lo articula con rutas de participación: información contrastada, diálogo con actores
           diversos y acciones escalables que puedan sostenerse en el tiempo sin depender exclusivamente de figuras heroicas.
@@ -503,7 +503,7 @@ const SUBTEMAS = [
           Un aprendizaje central es que el impacto público no está reservado a quienes ostentan cargos formales. Decisiones locales
           sobre espacios comunes, escolarización, seguridad percibida o calidad ambiental se nutren de aportes ordinarios cuando se
           canalizan con método: evidencias, calendarios realistas y acuerdos que distribuyan tareas. Salir de la posición de mero
-          espectador —aun con compromisos acotados— altera la dinámica colectiva y reduce la fragmentación entre “los que se quejan”
+          espectador, aun con compromisos acotados, altera la dinámica colectiva y reduce la fragmentación entre “los que se quejan”
           y “los que supuestamente arreglan todo”.
         </p>
       </>
@@ -513,7 +513,7 @@ const SUBTEMAS = [
         Ejemplo en contexto cercano: impulsar una{' '}
         <strong>jornada comunitaria de mantenimiento en un parque o espacio público</strong>, articulando convocatoria abierta,
         gestión de residuos conforme a normativa, permisos cuando aplique y una minuta breve para la autoridad municipal que
-        documente necesidades recurrentes —un ciclo que une convivencia, datos y seguimiento institucional.
+        documente necesidades recurrentes, un ciclo que une convivencia, datos y seguimiento institucional.
       </>
     ),
     links: [
@@ -548,10 +548,18 @@ const SUBTEMAS = [
           de confort disfrazada de compromiso.
         </p>
         <p>
-          La reflexión incómoda —pero formativa— consiste en contrastar la autoimagen (“soy buen ciudadano”) con evidencias
+          La reflexión incómoda, pero formativa, consiste en contrastar la autoimagen (“soy buen ciudadano”) con evidencias
           conductuales: frecuencia de participación, disposición al diálogo con diferencias legítimas y disposición a asumir costos
           cuando las reglas del juego parecen sesgadas. Reconocer matices permite armar equipos complementarios y evitar tanto el
           maximalismo improductivo como la resignación silenciosa ante lo mejorable.
+        </p>
+        <p>
+          Una narración popular que ilustra estas tensiones es la
+          película <em>Zootopia</em> (Disney 2016): una ciudad cosmopolita donde conviven
+          mayorías y minorías marcadas por historia, tamaño y estereotipos. La trama muestra cómo la convivencia formal puede
+          convivir con prejuicios cotidianos y con instrumentaciones del miedo que fragmentan a la ciudadanía; también muestra a
+          quienes solo reproducen etiquetas heredadas frente a quienes investigan causas, construyen alianzas improbables y asumen
+          riesgos para corregir injusticias que otros prefieren naturalizar.
         </p>
       </>
     ),
@@ -584,7 +592,7 @@ const SUBTEMAS = [
       <>
         <p>
           Las sociedades de consumo y meritocracia tienden a equiparar vivir bien con acumular bienes, visibilidad o logros
-          comparables. Desde la ética reflexiva —y en diálogo con tradiciones como la virtud aristotélica— conviene ampliar el foco:
+          comparables. Desde la ética reflexiva, y en diálogo con tradiciones como la virtud aristotélica, conviene ampliar el foco:
           estabilidad emocional relativa, vínculos confiables, autonomía razonable y coherencia entre valores declarados y prácticas.
           Sin ese contrapeso, es posible mantener una trayectoria sociológicamente exitosa al tiempo que se experimenta vacío,
           agotamiento crónico o desajuste entre prioridades y tiempo disponible.
@@ -600,7 +608,7 @@ const SUBTEMAS = [
     ejemplo: (
       <>
         Caso frecuente en entornos competitivos: mantener <strong>reconocimientos externos o cargas de trabajo intensas</strong>{' '}
-        sin espacios verificables para <strong>descanso restaurador, duelo legítimo o intimidad relacional</strong> —un patrón donde
+        sin espacios verificables para <strong>descanso restaurador, duelo legítimo o intimidad relacional</strong>, un patrón donde
         el costo psicosocial puede permanecer invisible hasta agotar capacidades.
       </>
     ),
@@ -635,7 +643,7 @@ const SUBTEMAS = [
       <>
         <p>
           La tradición virtuosa asociada a Aristóteles describe la excelencia moral como un hábito estable orientado a un punto
-          intermedio entre defecto y exceso —por ejemplo, entre cobardía y temeridad en el caso del valor. Traducido a dilemmas
+          intermedio entre defecto y exceso, por ejemplo, entre cobardía y temeridad en el caso del valor. Traducido a dilemmas
           contemporáneos, el esquema ayuda a diagnosticar oscilaciones típicas: hiperexigencia laboral frente al abandono de
           obligaciones; hiperconectividad frente al aislamiento digital paralizante; control rígido frente a impulsividad
           desorganizada.
@@ -646,12 +654,21 @@ const SUBTEMAS = [
           retomar compromisos tras un desvío no es debilidad, sino madurez práctica. La virtud, así entendida, reconoce la finitud
           humana sin renunciar a la mejora continua.
         </p>
+        <p>
+          Una película que intensifica esta pregunta es <em>Whiplash</em> (Damien Chazelle, 2014): el
+          jazz y el conservatorio son el escenario, pero el núcleo dramático es hasta dónde puede llegar la ambición legítima antes
+          de volverse autolesiva, y qué papel juegan maestros, exigencia pública y miedo al “buen trabajo” como eufemismo de la
+          complacencia. La ficción permite contrastar, en versión hiperbólica, dos fallos frecuentes del justo medio aplicado al
+          rendimiento: el <strong>exceso</strong> (perfeccionismo cruel, identidad reducida al logro) y el <strong>defecto</strong>{' '}
+          (conformismo que evita el esfuerzo formativo). Entre ambos habita la zona incómoda que Aristóteles asocia a la excelencia:
+          disciplina sostenible, feedback honesto y cuidado de uno mismo y del otro.
+        </p>
       </>
     ),
     ejemplo: (
       <>
         Caso habitual: sustituir la navegación reactiva en <strong>redes sociales</strong> por sesiones delimitadas con{' '}
-        <strong>objetivos formativos o comunitarios explícitos</strong>, combinadas con acuerdos personales de hiato —un ejemplo
+        <strong>objetivos formativos o comunitarios explícitos</strong>, combinadas con acuerdos personales de hiato, un ejemplo
         modesto de cómo el medio virtuoso se opera mediante reglas claras y autocontrol situacional.
       </>
     ),
@@ -661,10 +678,14 @@ const SUBTEMAS = [
         'https://www.abelmarin.com/la-virtud-esta-en-el-medio-y-que-mas/',
       ],
       ['Justo medio (enciclopedia en español · Herder)', 'https://encyclopaedia.herdereditorial.com/wiki/Justo_medio'],
+      [
+        '«Whiplash» y los tiempos mediocres — excelencia y obsesión (El Debate)',
+        'https://www.eldebate.com/cultura/20240323/whiplash-tiempos-mediocres_183874.html',
+      ],
     ],
     videos: [
       ['Aristóteles y la ética: eudemonismo y término medio', 'Q1-8JUkE1yM'],
-      ['Ética y virtud en el justo medio', 'bFQu6dD5lSc'],
+      ['Los límites de una obsesión — Whiplash (relato y reflexiones · Farid Dieck)', 'rpafM5wyfis'],
     ],
     Activity: BalanzaActivity,
     cardClass: 'topicCard topicCard--sage',
@@ -677,8 +698,7 @@ export default function App() {
   const navLinks = [
     ['Portada', 'hero'],
     ['Subtemas', 'subtemas'],
-    ['Conclusiones', 'conclusiones'],
-    ['Reflexión personal', 'reflexion'],
+    ['Conclusión y reflexión', 'conclusion-reflexion'],
     ['Recursos', 'recursos'],
   ]
 
@@ -755,7 +775,7 @@ export default function App() {
                     <span className="topicNum">{topic.num}</span>
                     <span className="topicTitleWrap">
                       <span className="topic_title">{topic.title}</span>
-                      <span className="topic_pull">{ideaShort(topic.idea)}…</span>
+                      <span className="topic_pull">{ideaShort(topic.idea)}...</span>
                     </span>
                     <span className="topicChevron" aria-hidden>
                       ›
@@ -808,58 +828,65 @@ export default function App() {
           </div>
         </section>
 
-        <section id="conclusiones" className="narrow js-reveal">
+        <section id="conclusion-reflexion" className="narrow js-reveal">
           <div className="sectionHead">
-            <h2>Conclusiones integradoras</h2>
-          </div>
-          <div className="cardSoft">
-            <p>
-              En conjunto, estos ejes sugieren que la ética aplicada combina tres movimientos: prestar atención fina a cómo se trata
-              a las personas en contextos reales; traducir juicios en compromisos públicos o comunitarios que no dependan solo de la
-              queja; y volver la mirada hacia uno mismo para evaluar si las prácticas cotidianas —incluidas las laborales y las
-              digitales— sostienen o erosionan dignidad propia y ajena.
-            </p>
-            <p>
-              La reflexión sobre vivir bien y el justo medio cierra el circuito: remindernos que fines materiales o reputacionales,
-              si no se ordenan dentro de un proyecto equilibrado, pueden desplazar relaciones, salud y sentido. Integrar derechos,
-              ciudadanía y virtudes personales fortalece pensamiento crítico y empatía, pero sobre todo habitúa decisiones más
-              coherentes con valores declarados en democracia.
-            </p>
-          </div>
-        </section>
-
-        <section id="reflexion" className="narrow js-reveal">
-          <div className="sectionHead">
-            <h2>Reflexión personal — Esteban Rojas</h2>
+            <h2>Conclusión y reflexión personal</h2>
           </div>
           <div className="cardAccent">
+            <h3 className="cardAccent_subhead">Conclusiones</h3>
             <p>
-              Lo que más me llevo del módulo es la insistencia en cerrar la brecha entre principios admirables y prácticas
-              observables. Los derechos humanos dejan de sonar abstractos cuando uno empieza a notar exclusiones cotidianas y se
-              pregunta qué puede hacer, incluso de forma modesta, sin convertir la indignación en espectáculo ni la pasividad en
-              cinismo.
+              Al cerrar el recorrido, me queda una idea muy clara: la ética no se agota en conceptos; es algo que se vive día a día.
+              No se trata solo de saber qué se considera bien o mal, sino de empezar a notar cómo eso se traduce en lo que hacemos, en
+              cómo tratamos a los demás y en las decisiones que tomamos, incluso en gestos o hábitos que parecen pequeños.
             </p>
             <p>
-              La ciudadanía activa me interpela a sustituir lamentos prolongados por pasos concretos —información verificada,
-              diálogo con otros actores, propuestas escalables— porque el cambio suele anidar en gestiones pequeñas pero sostenidas.
-              El apartado sobre tipos de ciudadanos me recuerda revisar con honestidad si mi compromiso aporta o solo cumple una
-              imagen cómoda de “buen ciudadano”.
+              También entiendo que no alcanza con tener una opinión o señalar problemas. Es relativamente fácil ver lo que falla; lo
+              incómodo, y lo verdaderamente importante, es dar el siguiente paso: involucrarse, aunque sea poco y aunque no salga
+              perfecto. Justo ahí es donde suele empezar un cambio perceptible.
             </p>
             <p>
-              Por último, reflexionar sobre vivir bien y sobre el justo medio me obliga a confrontar narrativas de éxito que casi
-              nunca miden descanso, vínculos ni propósito. Aspiro a que mi trayectoria combine rigor profesional con límites sanos y
-              contribución real al entorno, entendiendo que el equilibrio se negocia día a día y que la ética personal alimenta —o
-              debilita— la vida en comunidad.
+              Valoro haber reforzado que estos aprendizajes no circulan solo por textos o clase. Muchas veces los captamos mejor a
+              través de historias, películas o series, donde conflictos morales aparecen de forma más tangible. Narrativas como{' '}
+              <em>Whiplash</em>, o incluso relatos más cotidianos (como los que exploramos al hablar de ciudadanía con{' '}
+              <em>Zootopia</em>), muestran cómo los extremos, las decisiones y las consecuencias son parte de la vida real, no un
+              apéndice de la teoría.
+            </p>
+            <p>
+              Integrar derechos, participación, modo de vivir y equilibrio me ayuda a ver la ética de manera más completa: no como una
+              lista de reglas externas, sino como una forma de vivir con más conciencia, más coherencia y más intención.
+            </p>
+
+            <h3 className="cardAccent_subhead">Reflexión personal</h3>
+            <p>
+              Lo que más me llevo es la distancia entre <strong>saber</strong> algo y <strong>vivirlo</strong>. Es sencillo hablar de
+              derechos, de justicia o de lo correcto; aplicarlo en el día a día es otro nivel de exigencia ética.
+            </p>
+            <p>
+              Siento que ya no puedo ignorar con la misma ligereza ciertas cosas. Empiezas a notar detalles que antes pasaban de largo:
+              actitudes, asimetrías, modos de tratar a otras personas... Esa lucidez incomoda, pero me parece una incomodidad necesaria.
+            </p>
+            <p>
+              También me obligó a revisar mi papel en la sociedad, sin dramatizarlo: ¿realmente aporto algo o me quedo en la opinión?
+              ¿Me muevo en lo mínimo indispensable o intento crecer en compromiso? Son preguntas simples, pero cargan peso.
+            </p>
+            <p>
+              En lo personal, los ejes de vivir bien y del equilibrio fueron los que más me movieron. Te confrontan con la posibilidad
+              de perseguir metas, estrés, redes y reconocimiento sin detenerte a preguntar si eso te hace bien de verdad.
+            </p>
+            <p>
+              Me gustó asimilar que el equilibrio no es un estado perfecto ni definitivo: se ajusta, cambia y se construye con el tiempo.
+              No se trata de acertar siempre, sino de ser más consciente y empujar, cuando puedo, hacia un poquito mejor que antes.
+            </p>
+            <p>
+              Me quedo con la idea de que vivir con ética no es aspirar a la perfección, sino a la conciencia: pequeños cambios en cómo
+              piensas y actúas pueden tener más alcance del que uno imagina al principio.
             </p>
           </div>
         </section>
 
         <section id="recursos" className="narrow js-reveal">
           <div className="sectionHead">
-            <h2>Fuentes y recursos citados</h2>
-            <p className="sourcesLead">
-              Enlaces externos agrupados por subtema; lecturas y videos en un solo bloque.
-            </p>
+            <h2>Fuentes y recursos</h2>
           </div>
           <div className="sourcesCompact cardSoft">
             <dl className="sourcesDl">
